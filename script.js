@@ -1,12 +1,12 @@
-const formulario = document.getElementById('#form')
-const numA = parseFloat(document.getElementById('#campoA'))
-const numB = parseFloat(document.getElementById('#campoB'))
+const formulario = document.getElementById('form')
+const numA = document.getElementById('campoA')
+const numB = document.getElementById('campoB')
 
 
 formulario.addEventListener('submit', function(e) {
     e.preventDefault()
-    console.log(numA,numB)
-    if(numA > numB){
+    
+    if(parseFloat(numA.value) > parseFloat(numB.value)){
         alert('O número do campo B precisa ser maior que o campo A, refaça')
     }else{
         alert('Parabéns')
@@ -14,10 +14,4 @@ formulario.addEventListener('submit', function(e) {
     
 })
 
-//function validaForm(){
-//    if(numA > numB){
-//        alert('O número do campo B precisa ser maior que o campo A, refaça')
-//    }else{
-//        alert('Parabéns')
-//    }
-//}
+
