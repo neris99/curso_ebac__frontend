@@ -43,13 +43,14 @@ button{
     text-transform: uppercase;
 }
 
-ul{
+.lista-tarefas{
+    padding: 16px;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bold;
 }
 
-ul li{
-    max-width: 25%;
-    list-style: none;
-    position: relative;
+.lista-tarefas:onclick{
+    text-decoration: line-through;
 }
