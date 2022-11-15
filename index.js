@@ -5,12 +5,10 @@ $(document).ready(function() {
         const tarefa = $('#nova-tarefa').val()
         const novaTarefa = $(`<li>
         ${tarefa}
-        </li>`)
+        </li>`).click(function(){
+            $('#tarefa-efetivada').attr('style','text-decoration: line-through')
+        })
         $(novaTarefa).appendTo('ul')
         $('#nova-tarefa').val('')
-    })
-
-    $('#tarefa-efetivada').click(function(){
-        $('li').style.textDecorationLineThrough()
     })
 })
