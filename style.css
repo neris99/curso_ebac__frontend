@@ -1,0 +1,18 @@
+button{
+    margin-top: 24px;
+}
+
+h1{
+    margin-top: 50px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+form{
+    margin-top: 50px;
+    width: 50%;
+}
+
+form input{
+    margin-bottom: 8px;
+}
