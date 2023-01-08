@@ -1,0 +1,13 @@
+@use 'variaveis';
+
+body{
+    background-color: variaveis.$corFundo;
+}
+
+h1{
+    color: variaveis.$corTextoH1;
+}
+
+p{
+    color: variaveis.$corTextoP;
+}
