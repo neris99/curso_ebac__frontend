@@ -32,7 +32,7 @@ let Carro extends Veiculo {
     }
 }
 
-    let Moto extends Veiculo {
+let Moto extends Veiculo {
     constructor(marca, modelo, ano, cor, cilindradas) {
         super(marca, modelo, ano, cor);
         this.cilindradas = cilindradas;
