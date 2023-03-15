@@ -1,5 +1,5 @@
 //clase de abstração
-class Veiculo {
+let Veiculo {
     constructor(marca, modelo, ano, cor) {
         this.marca = marca;
         this.modelo = modelo;
@@ -17,7 +17,7 @@ class Veiculo {
 }
 
 //duas classes herdeiras da classe anterior que seria veiculo
-class Carro extends Veiculo {
+let Carro extends Veiculo {
     constructor(marca, modelo, ano, cor, portas) {
         super(marca, modelo, ano, cor);
         this.portas = portas;
@@ -32,7 +32,7 @@ class Carro extends Veiculo {
     }
 }
 
-    class Moto extends Veiculo {
+    let Moto extends Veiculo {
     constructor(marca, modelo, ano, cor, cilindradas) {
         super(marca, modelo, ano, cor);
         this.cilindradas = cilindradas;
@@ -48,9 +48,9 @@ class Carro extends Veiculo {
 }
 
 //instancias do objeto veiculo
-const meuCarro = new Carro('Fiat', 'Uno', 2021, 'vermelho', 4);
-const minhaMoto = new Moto('Honda', 'CG 160', 2020, 'preta', 160);
-const meuOutroCarro = new Carro('Chevrolet', 'Cruze', 2019, 'branco', 4);
+let meuCarro = new Carro('Fiat', 'Uno', 2021, 'vermelho', 4);
+let minhaMoto = new Moto('Honda', 'CG 160', 2020, 'preta', 160);
+let meuOutroCarro = new Carro('Chevrolet', 'Cruze', 2019, 'branco', 4);
 
 
 meuCarro.acelerar(); // Acelerando...
